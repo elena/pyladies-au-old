@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PyLadies Australia</title>
+<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+body {background-color: #ccc;font-family: 'Istok Web', sans-serif; }/*text-transform: uppercase;}*/
+#main {width: 800px; border: 2px solid #e2e2e2; background-color: #fff;}
+#content {background-color: #eee;}
+#id_email{ width: 250px;}
+.errorlist {list-style:none; color: #ff3333;}
+blockquote {margin: 30px 50px; padding: 30px 0; border: 3px solid #ccc; background-color: #f1f1f1;}
+a {color: #999;}
+a:visited, a:hover {color: #666;}
+a, a:link, a:visited, a:hover {text-decoration: none;}
+</style>
+<script type="text/javascript" src="/admin_media/js/jquery.min.js"></script> 
+<script type="text/javascript">
+WebFontConfig = {google: { families: [ 'Istok+Web:latin' ]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript'; wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+})(); 
+$(document).ready(function(){
+	$("#content").load('/home-text/');
+	$("#bottom").load('/bottom-text/');
+});
+</script> 
+</head>
+
+<body>
+<center>
+<div id="main">
+<section id="content"></section>
+
+{% block content %}{% endblock %}
+
+{% comment %}
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=236105309759350&amp;xfbml=1"></script><fb:like href="http://pysocc.org/" send="true" width="450" show_faces="false" action="like" font=""></fb:like>
+<br />
+<br />
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+<fb:facepile href="http://pysocc.org/" size="large" width="450" max_rows="3"></fb:facepile>
+{% endcomment %}
+
+<br />
+<br />
+<br />
+
+</div>
+<br />
+<section id="bottom"></section>
+</center>
+
+</body>
+</html>

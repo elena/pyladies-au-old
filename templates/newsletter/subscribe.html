@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block success %}{% endblock %}
+
+{% block content %}
+<form method="post" action=".">{% csrf_token %}
+<blockquote>
+<label>Email Address: </label>
+{{ form.email }}
+{% if form.email.errors %}{{ form.email.errors }}{% endif %}
+<p>
+<label>Yes, I am interested: </label>
+{{ form.subscribed }}
+</p>
+<input name="SUBMIT" type="submit" value="SUBMIT" />
+</blockquote>
+{# <p class="button"><a href="javascript:document.forms[0].submit()">Submit</a></p> #}
+</form>
+{% endblock %}
