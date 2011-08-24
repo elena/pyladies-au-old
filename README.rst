@@ -10,7 +10,7 @@ https://github.com/pyladies/pyladies
 This is currently hosted http://pyl.elena.net.au
 
 This will shortly/eventually be hosted at http://au.pyladies.com (link
-currently broken).
+goes to meetup.com group).
 
 
 Details
