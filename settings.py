@@ -1,4 +1,3 @@
-
 import os
 PROJECT_DIR = os.path.dirname(__file__)
 PROJECT_NAME = 'pyl'
@@ -37,6 +36,16 @@ MEDIA_URL = '/media/%s/' % PROJECT_NAME
 ADMIN_MEDIA_PREFIX = '/admin_media/'
 
 SECRET_KEY = 'imept_svc5#o)rvj_l6avb(b*3f04j2b_6ka04yj_+4b5%5*v+'
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.csrf',
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
+)
 
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
