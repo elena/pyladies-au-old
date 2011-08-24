@@ -7,7 +7,7 @@ PyLadies is an international group of women who use and love the Python programm
 The main pyladies.com website is here:
 https://github.com/pyladies/pyladies
 
-This is currently hosted http://pyl.elena.net.au
+This is currently hosted http://pyl.pysocc.org/
 
 This will shortly/eventually be hosted at http://au.pyladies.com (link
 goes to meetup.com group).
