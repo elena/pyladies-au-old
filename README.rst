@@ -2,7 +2,7 @@
 PyLadies Australia website (PySheilas)
 ========================================
 
-PyLadies is an international group of women who use and love the Python programming language. 
+PyLadies is an international group of women who use and love the Python programming language.
 
 The main pyladies.com website is here:
 https://github.com/pyladies/pyladies
